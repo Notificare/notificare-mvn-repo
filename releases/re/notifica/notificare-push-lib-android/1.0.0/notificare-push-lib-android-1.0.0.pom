@@ -18,6 +18,7 @@
       <groupId>com.android.support</groupId>
       <artifactId>appcompat-v7</artifactId>
       <version>19.1.0</version>
+      <type>aar</type>
       <scope>compile</scope>
     </dependency>
     <dependency>

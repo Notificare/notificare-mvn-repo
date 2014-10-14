@@ -10,7 +10,7 @@
     <dependency>
       <groupId>com.google.android.gms</groupId>
       <artifactId>play-services</artifactId>
-      <version>4.4.52</version>
+      <version>6.1.11</version>
       <type>aar</type>
       <scope>compile</scope>
     </dependency>

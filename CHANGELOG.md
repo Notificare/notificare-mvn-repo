@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.3.0	(2015-01-08)
+- prevent compatibility issue with Android Wear
+- add region and beacon session
+- minor bug fixes
+
 1.2.3	(2014-12-16)
 - check for non-null BeaconClient before monitoring beacons
 - make listener interfaces public in Billing

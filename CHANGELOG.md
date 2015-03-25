@@ -1,36 +1,36 @@
 Changelog
 =========
-1.4.1
+1.4.1 2015-03-25
 
-Added lights settings to be read from incoming notifications
-Added default settings specific for Android (currently only lights)
-Added preference setting for enabled/disabled notifications, apps should check with isNotificationsEnabled() in onReady callback
-Fixed compatibility issue with latest V7AppCompat
-Updated to Gradle build tools 1.1.3, Android build tools 22.0.1, Android SDK 22, GooglePlayServices 7.0.0, V7AppCompat 22.0.0, AltBeacon 2.1.4
+- Added lights settings to be read from incoming notifications
+- Added default settings specific for Android (currently only lights)
+- Added preference setting for enabled/disabled notifications, apps should check with isNotificationsEnabled() in onReady callback
+- Fixed compatibility issue with latest V7AppCompat
+- Updated to Gradle build tools 1.1.3, Android build tools 22.0.1, Android SDK 22, GooglePlayServices 7.0.0, V7AppCompat 22.0.0, AltBeacon 2.1.4
 
-1.4.0
+1.4.0 2015-02-05
 
-Let OS handle all URLs in WebView
-Update AndroidBeaconLibrary to 2.1
-Added multiple beacon sessions, for overlapping regions
-Changed update intervals on geofences
-Added customizable small icon, use setSmallIcon() to change it from default application icon
-Retry API requests
-Clear entered beacon regions
-Save registered device to shared preferences, so API calls are only done when needed, even after restart
-Save already entered beacons to shared preferences, so even after restart enters are not triggered
-Save already entered geofences to shared preferences, so even after restart enters are not triggered
+- Let OS handle all URLs in WebView
+- Update AndroidBeaconLibrary to 2.1 
+- Added multiple beacon sessions, for overlapping regions
+- Changed update intervals on geofences 
+- Added customizable small icon, use setSmallIcon() to change it from default application icon
+- Retry API requests
+- Clear entered beacon regions
+- Save registered device to shared preferences, so API calls are only done when needed, even after restart
+- Save already entered beacons to shared preferences, so even after restart enters are not triggered
+- Save already entered geofences to shared preferences, so even after restart enters are not triggered
 
-1.3.2        2015-01-22
+1.3.2	2015-01-22
 
-Only make one fetchApplicationInfo request at once
+- Only make one fetchApplicationInfo request at once
 
-1.3.1        2015-01-21
+1.3.1	2015-01-21
 
-Retry fetchApplicationInfo soon connectivity becomes available
-Move logOpenNotification to NotificationActivity
-Log open and influenced after handling action from notification center
-Removed UserSegment events
+- Retry fetchApplicationInfo soon connectivity becomes available
+- Move logOpenNotification to NotificationActivity
+- Log open and influenced after handling action from notification center
+- Removed UserSegment events
 
 1.3.0	(2015-01-08)
 - prevent compatibility issue with Android Wear

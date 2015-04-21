@@ -18,7 +18,7 @@ allprojects {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 're.notifica:notificare-push-lib-android:1.4.2'
+    compile 're.notifica:notificare-push-lib-android:1.4.3'
 }
 ```
 

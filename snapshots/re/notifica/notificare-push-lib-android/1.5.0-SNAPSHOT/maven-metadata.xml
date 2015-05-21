@@ -2,14 +2,12 @@
 <metadata>
   <groupId>re.notifica</groupId>
   <artifactId>notificare-push-lib-android</artifactId>
-  <version>1.2.0-SNAPSHOT</version>
+  <version>1.5.0-SNAPSHOT</version>
   <versioning>
-    <versions>
-      <version>1.2.0-SNAPSHOT</version>
-      <version>1.3.3-SNAPSHOT</version>
-      <version>1.4.0-SNAPSHOT</version>
-      <version>1.5.0-SNAPSHOT</version>
-    </versions>
+    <snapshot>
+      <timestamp>20150521.074216</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
     <lastUpdated>20150521074216</lastUpdated>
   </versioning>
 </metadata>

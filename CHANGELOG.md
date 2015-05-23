@@ -1,6 +1,14 @@
 Changelog
 =========
 
+1.5.0
+
+- Send oldDeviceID if changed
+- Added system push / refresh application info
+- Removed deprecated ActionBarActivity for AppCompatActivity
+- Removed deprecated Apache HTTP client references
+- Updated Gradle build tools 1.2.2, Google Play Services 7.3.0, V7AppCompat 22.1.1
+
 1.4.3 2015-04-21
 
 - Set previously registered deviceId at start

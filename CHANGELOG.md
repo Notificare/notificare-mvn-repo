@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.5.1
+
+- Reregister if last registration was more than a month ago
+
 1.5.0
 
 - Send oldDeviceID if changed

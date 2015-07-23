@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.5.2
+
+- Add option to enable JavaScript in WebViews
+- Add reverse-geocoded country code to device location update
+- Updated Gradle build tools 1.2.3, Google Play Services 7.5.0, V7AppCompat 22.2.1
+
 1.5.1
 
 - Reregister if last registration was more than a month ago

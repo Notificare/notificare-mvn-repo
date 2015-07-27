@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.5.3
+
+Fix location update with unknown country
+
 1.5.2
 
 - Add option to enable JavaScript in WebViews

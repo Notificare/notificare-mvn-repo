@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.5.4
+
+Log SDK version at launch
+Log comprehensive error messages on authentication failure
+Log comprehensive error messages on max retries
+
 1.5.3
 
 Fix location update with unknown country

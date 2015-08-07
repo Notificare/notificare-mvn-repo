@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.5.5
+
+Add smarter refresh of geofences
+
 1.5.4
 
 Log SDK version at launch

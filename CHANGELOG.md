@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.5.6
+
+Added check for external storage, show localizable Toast when failing
+Add handleNotificationOpenedIntent
+
 1.5.5
 
 Add smarter refresh of geofences

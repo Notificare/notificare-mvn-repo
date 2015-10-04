@@ -4,12 +4,18 @@ A repository with artifacts for developing apps with the Notificare SDK
 
 ## Notificare Push SDK for Android
 
+### BREAKING CHANGES in 1.6.0 !!
+
+See UPGRADE.md for details
+
+### Setup
+
 To be used in Android Studio, add the following to your app's Gradle config:
 
 ```groovy
 allprojects {
     repositories {
-        mavenCentral()
+        jcenter()
         maven {
             url "https://github.com/Notificare/notificare-mvn-repo/raw/master/releases"
         }
@@ -18,7 +24,7 @@ allprojects {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 're.notifica:notificare-push-lib-android:1.5.4'
+    compile group: 're.notifica', name: 'notificare-push-lib-android', version: '1.6.0', ext:'aar', transitive: true
 }
 ```
 

@@ -1,6 +1,17 @@
 Changelog
 =========
 
+1.6.0
+
+Suppress errors for unbound BeaconManager
+Fixed lastRegistration date to refer to latest actual registration API call
+Upgraded Gradle build tools 1.4.0, Google Play Services 8.1.0, V7AppCompat 23.0.1
+Added Android M system permissions helper methods and checks
+Replaced UrlImageViewer with Ion
+Added PushService listener intent filters
+Added InstanceID intent service
+Added Registration intent service
+
 1.5.6
 
 Added check for external storage, show localizable Toast when failing

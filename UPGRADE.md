@@ -135,6 +135,21 @@ In the onNotificareReady method, check for permissions and request them if neces
         }
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        switch (requestCode) {
+            case LOCATION_PERMISSION_REQUEST_CODE: {
+                if (Notificare.shared().checkRequestLocationPermissionResult(permissions, grantResults)) {
+                    Log.i(TAG, "permission granted");
+                    Notificare.shared().enableLocationUpdates();
+                    Notificare.shared().enableBeacons();
+                }
+                return;
+            }
+        }
+    }
+
+
 ```
 
 

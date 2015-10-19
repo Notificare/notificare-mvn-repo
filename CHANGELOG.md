@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.6.1
+
+Fixed IllegalArgumentException in adding empty list of geofences
+Added setNotificationAccentColor
+Upgraded V7AppCompat to 23.1
+
 1.6.0
 
 Suppress errors for unbound BeaconManager

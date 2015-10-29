@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.6.2
+
+Added localized labels for action buttons
+Added clear inbox
+Fixed issue where app could crash at launch from a malformed GCM intent
+
 1.6.1
 
 Fixed IllegalArgumentException in adding empty list of geofences

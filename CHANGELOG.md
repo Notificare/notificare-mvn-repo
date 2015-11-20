@@ -1,6 +1,14 @@
 Changelog
 =========
 
+1.6.3
+
+Upgraded GooglePlayServices and V7AppCompat
+
+1.5.9
+
+Upgraded GooglePlayServices and V7AppCompat
+
 1.6.2
 
 Added localized labels for action buttons

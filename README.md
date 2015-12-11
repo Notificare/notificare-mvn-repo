@@ -24,7 +24,7 @@ allprojects {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile group: 're.notifica', name: 'notificare-push-lib-android', version: '1.6.0', ext:'aar', transitive: true
+    compile group: 're.notifica', name: 'notificare-push-lib-android', version: '1.6.4', ext:'aar', transitive: true
 }
 ```
 

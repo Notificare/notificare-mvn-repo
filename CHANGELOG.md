@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.6.4
+
+Added setApplicationKey / setApplicationSecret
+
 1.6.3
 
 Upgraded GooglePlayServices and V7AppCompat

@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.6.5
+
+Keep monitoring entered beacons when refreshing geofences so they can still trigger an exit
+Upgraded GooglePlayServices
+
 1.6.4
 
 Added setApplicationKey / setApplicationSecret

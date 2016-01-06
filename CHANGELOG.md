@@ -1,6 +1,10 @@
 Changelog
 =========
 
+## 1.6.6
+
+Added null check when adding location to region session, in edge cases this would lead to a NPE
+
 1.6.5
 
 Keep monitoring entered beacons when refreshing geofences so they can still trigger an exit

@@ -1,5 +1,16 @@
 Changelog
 =========
+## 1.7.0
+
+Added click url events in webviews
+Refactored db class into its own package
+Added inboxItemId to intents
+Added inbox sync methods, use inboxItemId when provided
+Added configurable settings for geofenceInitialTrigger and geofenceResponsiveness
+Force beacon exit upon region exit
+Changed default background beacon monitoring interval
+Force location update and fence loading when app is started
+Added configurable settings for locationUpdatesInterval, locationUpdatesFastestInterval and locationUpdatesSmallestDisplacement
 
 ## 1.6.6
 

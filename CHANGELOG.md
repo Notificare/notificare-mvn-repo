@@ -1,5 +1,10 @@
 Changelog
 =========
+## 1.7.1
+
+Fix URL webview, added bounds check
+Mark inboxItems as read when opening from NotificationManager
+
 ## 1.7.0
 
 Added click url events in webviews

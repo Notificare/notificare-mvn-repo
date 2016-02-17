@@ -1,5 +1,11 @@
 Changelog
 =========
+
+## 1.7.2
+
+Fix duplicate unread count updates when updating inbox items (T476)
+Disable caches for POST and PUT API calls
+
 ## 1.7.1
 
 Fix URL webview, added bounds check

@@ -1,6 +1,10 @@
 Changelog
 =========
 
+## 1.7.3
+
+Upgraded Support Libraries to 23.2.0, upgraded Ion to 2.1.7
+
 ## 1.7.2
 
 Fix duplicate unread count updates when updating inbox items (T476)

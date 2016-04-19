@@ -1,6 +1,15 @@
 Changelog
 =========
 
+## 1.8.0
+
+Added URLScheme notification type
+Added None notification type
+Added Video notification content types
+Added inbox-only messages
+Added assets
+Upgraded Support Libraries to 23.3.0
+
 ## 1.7.3
 
 Upgraded Support Libraries to 23.2.0, upgraded Ion to 2.1.7

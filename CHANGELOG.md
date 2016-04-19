@@ -10,6 +10,12 @@ Added inbox-only messages
 Added assets
 Upgraded Support Libraries to 23.3.0
 
+## 1.7.4
+
+Added missing unread count decrement when adding a duplicate notification that was unread
+Added OnNotificationReceived listener interface
+Updated Support Libraries to 23.2.1
+
 ## 1.7.3
 
 Upgraded Support Libraries to 23.2.0, upgraded Ion to 2.1.7

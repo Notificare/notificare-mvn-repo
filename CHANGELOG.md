@@ -1,6 +1,21 @@
 Changelog
 =========
 
+## 1.8.1
+
+Added passbook storage
+Added passbook UI, log warning when PassbookActivity not declared in manifest
+Added openInboxItem
+Added fetchInboxItem that will lazy load an inbox item's content
+Fix timezone in parsing of JSON ISO8601 dates
+Added reload (with optional clear of local inbox) for inbox manager
+Added fetch inbox from remote
+Added getUrl for file assets
+Allow non-file assets
+Ignore Notifications that could not be fetched
+Updated Support Libraries to 23.4.0
+Updated Google Play Services to 9.0.2
+
 ## 1.8.0
 
 Added URLScheme notification type

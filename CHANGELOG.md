@@ -1,6 +1,17 @@
 Changelog
 =========
 
+## 1.8.2
+
+Fix handling of NotificationOpened intents for Passbook
+Correctly log influenced open events
+Correctly handle type None and unknown types
+Add DND methods, check for empty message
+Add TimeOfDay and TimeOfDayRange models
+Fix external passbook handling
+Updated Support Libraries to 24.0.0
+Updated GooglePlayServices to 9.2.0
+
 ## 1.8.1
 
 Added passbook storage

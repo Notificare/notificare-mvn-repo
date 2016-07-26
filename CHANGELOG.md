@@ -1,6 +1,14 @@
 Changelog
 =========
 
+## 1.8.3
+
+Added support for relevance notifications, based on locations and beacons
+Improved pass' parsing
+Added default large and small radius for relevant passes
+Updated Google Play Services to 9.2.1
+Updated Support libs to 24.1.1
+
 ## 1.8.2
 
 Fix handling of NotificationOpened intents for Passbook

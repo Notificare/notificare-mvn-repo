@@ -1,6 +1,18 @@
 Changelog
 =========
 
+## 1.8.5
+
+Fix DB upgrade issue from pre-V5 to V7
+
+## 1.8.4
+
+Build against SDK 24
+Fixed SQLite table config for passes
+Fix service enabled check
+Updated InAppBilling to use latest version
+Updated Google Play Services to 9.4.0
+
 ## 1.8.3
 
 Added support for relevance notifications, based on locations and beacons

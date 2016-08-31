@@ -1,6 +1,13 @@
 Changelog
 =========
 
+## 1.8.6
+
+Fix billing manager setup exception handling
+Fix device tags clearing on DnD loading
+Updated Gradle wrapper and tools
+Updated support dependencies
+
 ## 1.8.5
 
 Fix DB upgrade issue from pre-V5 to V7

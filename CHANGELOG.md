@@ -1,6 +1,15 @@
 Changelog
 =========
 
+# 1.8.7
+
+Use resource for default relevance text
+Remove pass from notification manager when not relevant anymore
+Add removePass method
+Check pass voided or expired
+Honor minimum value of maxDistance and default radius
+Add inboxConfig to applicationInfo
+
 ## 1.8.6
 
 Fix billing manager setup exception handling

@@ -1,6 +1,26 @@
 Changelog
 =========
 
+# 1.9.1
+
+Check for relevant date before ending pass location relevance
+Check if lib is set up before handling Firebase intents
+
+# 1.9.0
+
+Added Notificare Cloud API requests
+Added FCM support
+Added userData
+Added title to notifications
+Added attachments to notifications
+Added reply to notification actions in NotificationManager
+Added pass updates by push
+Added pass updated notifications
+Added pass relevance for date
+Allow pass relevance to be onGoing notifications
+Add specific alternative text to passbook
+Add check for allowedUI
+
 # 1.8.7
 
 Use resource for default relevance text

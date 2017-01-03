@@ -1,5 +1,9 @@
 Changelog
 =========
+# 1.9.2
+
+Check for notificationsEnabled when handling GooglePlayServices error resolution
+Update to GooglePlayServices 10.0.1, Firebase 10.0.1, Support Libraries 25.1.0
 
 # 1.9.1
 

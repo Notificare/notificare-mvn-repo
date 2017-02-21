@@ -1,5 +1,12 @@
 Changelog
 =========
+
+# 1.9.3
+
+Update to GooglePlayServices 10.2.0, Firebase 10.2.0, Support Libraries 25.1.1
+Change minimum API level to 14
+Check for NULL values in JSON parsing
+
 # 1.9.2
 
 Check for notificationsEnabled when handling GooglePlayServices error resolution

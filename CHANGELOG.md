@@ -1,6 +1,13 @@
 Changelog
 =========
 
+# 1.9.4
+
+Update to Support Libraries 25.3.0
+Implicitly set userId to null when registering anonymously
+Allow mailto: and other URLs in Webview notifications
+Check for deviceId when fetching user data
+
 # 1.9.3
 
 Update to GooglePlayServices 10.2.0, Firebase 10.2.0, Support Libraries 25.1.1

@@ -1,6 +1,17 @@
 Changelog
 =========
 
+# notificare-push-lib-android 1.9.5
+
+Update to Support Libraries 25.3.1
+Update to GooglePlayServices 10.2.1
+Add registerUser / unregisterUser
+Call these methods after login/logout
+
+# notificare-support-lib-android 1.2.1
+
+Update to Support Libraries 25.3.1
+
 # 1.9.4
 
 Update to Support Libraries 25.3.0

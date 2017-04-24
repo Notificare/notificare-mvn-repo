@@ -1,6 +1,20 @@
 Changelog
 =========
 
+# 1.9.6
+
+Add app recommendation notification type
+Add close window query parameter check on URL click
+Allow to set or add optional headers on request
+Allow to provide optional headers when doing a cloud request
+
+# 1.9.5
+
+Update to Support Libraries 25.3.1
+Update to GooglePlayServices 10.2.1
+Add registerUser / unregisterUser
+Call these methods after login/logout
+
 # 1.9.4
 
 Update to Support Libraries 25.3.0

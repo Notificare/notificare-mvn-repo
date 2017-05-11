@@ -1,5 +1,14 @@
 Changelog
 =========
+# notificare-push-lib-android 1.9.7
+
+Check if progress indicator, dialog and activity still exist when returning from async calls inside notification fragment
+Catch missing network permissions when doing requests
+Catch missing network permissions when checking network connectivity
+
+# notificare-support-lib-android 1.2.2
+
+Catch missing network permissions when checking network connectivity
 
 # notificare-push-lib-android 1.9.6
 

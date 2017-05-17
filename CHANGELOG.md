@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-push-lib-android 1.9.8
+
+Log correct region id as fence in beacon sessions
+
 # notificare-push-lib-android 1.9.7
 
 Check if progress indicator, dialog and activity still exist when returning from async calls inside notification fragment

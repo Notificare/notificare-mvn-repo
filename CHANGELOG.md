@@ -1,5 +1,31 @@
 Changelog
 =========
+# notificare-push-lib-android 1.10.0
+
+Support for Android Oreo
+Added polygon support for geofences
+Added scannable activity
+
+# notificare-push-lib-android 1.9.11
+
+Ask for camera permission in actions when needed
+Fix incorrect handling of options menu in notifications
+Updated GooglePlayServices to 11.0.4
+Changed add to wallet icon to text
+
+# notificare-push-lib-android 1.9.10
+
+Updated GooglePlayServices to 11.0.1
+Added FileProvider for camera actions
+Post AssetLoader async results on main thread
+
+# notificare-push-lib-android 1.9.9
+
+Updated GooglePlayServices to 11.0.0
+Updated Support Libraries to 25.4.0
+Switch to Picasso for image loading
+Add ProGuard rules
+
 # notificare-push-lib-android 1.9.8
 
 Log correct region id as fence in beacon sessions

@@ -1,5 +1,42 @@
 # Upgrade
 
+## Upgrade from 1.9.x to 1.10.0
+
+### Add notification channel
+
+Starting with Android O, you need at least one channel for notifications to be shown to users. Without a channel, notifications will _never_ appear in the notification manager.
+Luckily, the SDK let's you easily add one. In your Application class <code>onCreate</code> add the following:
+
+```java
+    Notificare.shared().launch(this); <-- this should already be there
+    Notificare.shared().createDefaultChannel();
+```
+
+That's it! Now, every notification will appear in the default channel "Push Notifications". 
+You can change the name and the description of that channel in <code>strings.xml</code> :
+
+```xml
+<string name="notificare_default_channel_name">Push Notifications</string>
+<string name="notificare_default_channel_description">This channel shows push notifications</string>
+```
+
+If you want a channel that your app created to be the default channel, call
+
+```java
+Notificare.shared().setDefaultChannel(myChannel.getId());
+```
+
+You can also dedicate a specific channel to passbook relevance notifications and updates
+
+```java
+Notificare.shared().setPassbookChannel(myPassbookChannel.getId());
+```
+
+
+### CAVEAT
+Please be aware that channels, once created, can never be removed from the app's settings anymore, unless the user reinstalls the app or clears the app's data. In other words: plan your channels before you create them.
+
+
 ## Upgrade from 1.8.x to 1.9.0
 
 ### Upgrade to the new Firebase Cloud Messaging

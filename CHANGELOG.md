@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-support-lib-android 1.3.1
+
+Fix dimissal of InternetConnectionActivty
+
 # notificare-push-lib-android 1.10.0
 
 Support for Android Oreo

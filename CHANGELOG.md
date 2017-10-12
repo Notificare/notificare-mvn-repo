@@ -1,5 +1,15 @@
 Changelog
 =========
+# notificare-push-lib-android 1.10.1
+
+Updated GooglePlayServices to 11.4.2
+Updated Support Libraries to 26.1.0
+
+# notificare-support-lib-android 1.3.2
+
+Updated GooglePlayServices to 11.4.2
+Updated Support Libraries to 26.1.0
+
 # notificare-support-lib-android 1.3.1
 
 Fix dimissal of InternetConnectionActivty

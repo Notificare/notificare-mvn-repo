@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-push-lib-android 1.11.0
+
+Added extra to asset group
+
 # notificare-push-lib-android 1.10.1
 
 Updated GooglePlayServices to 11.4.2

@@ -1,6 +1,15 @@
 Changelog
 =========
 
+# notificare-push-lib-android 1.12.1
+
+Updated GooglePlayServices to 11.6.2
+Updated Support Libraries to 27.0.2
+
+# notificare-support-lib-android 1.4.1
+
+Updated Support Libraries to 27.0.2
+
 # notificare-push-lib-android 1.12.0
 
 Updated GooglePlayServices to 11.6.0

@@ -1,5 +1,11 @@
 Changelog
 =========
+# notificare-push-lib-android 1.13.0
+
+Improve retry of API calls
+Add partial notification to inbox before full content is loaded
+Post partial notification to notification manager if content fetch fails
+Clear last known location when disabling location updates
 
 # notificare-push-lib-android 1.12.2
 

@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-push-lib-android 1.13.2
+
+Added logCustomEvent with callback
+
 # notificare-push-lib-android 1.13.1
 
 Added logCustomEvent with callback

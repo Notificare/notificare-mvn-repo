@@ -2,7 +2,7 @@ Changelog
 =========
 # notificare-push-lib-android 1.13.2
 
-Added logCustomEvent with callback
+Enable local storage in webviews if javascript is allowed
 
 # notificare-push-lib-android 1.13.1
 

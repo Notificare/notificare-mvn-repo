@@ -21,7 +21,7 @@ To be used in Android Studio, add the following to your app's Gradle config:
     }
 
     dependencies {
-        compile group: 're.notifica:notificare-push-lib-android:1.10.0'
+        compile group: 're.notifica:notificare-push-lib-android:1.13.2'
     }
 ```
 

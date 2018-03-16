@@ -1,5 +1,14 @@
 Changelog
 =========
+# notificare-support-lib-android 1.4.2
+
+Updated Support Libraries to 27.1.0
+
+# notificare-push-lib-android 1.13.3
+
+Check for null IntentReceiver in InstanceIDService
+Updated Support Libraries to 27.1.0
+
 # notificare-push-lib-android 1.13.2
 
 Enable local storage in webviews if javascript is allowed

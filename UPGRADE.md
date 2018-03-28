@@ -1,5 +1,34 @@
 # Upgrade
 
+## Upgrade from 1.10.x to 1.11.0
+
+#### Manifest update
+
+Remove unnecessary entries:
+
+```xml
+
+    <!-- this service is no longer needed -->
+    <service
+        android:name="re.notifica.push.fcm.RegistrationService"
+        android:exported="false" />
+        
+```
+
+```xml
+
+    <!-- this service is automatically added by Gradle dependency -->
+    <service
+        android:name="re.notifica.push.gcm.TaskService"
+        android:exported="true"
+        android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+        <intent-filter>
+            <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+        </intent-filter>
+    </service>
+    
+```
+
 ## Upgrade from 1.9.x to 1.10.0
 
 ### Add notification channel

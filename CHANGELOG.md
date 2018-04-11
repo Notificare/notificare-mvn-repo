@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-push-lib-android 1.13.5
+
+Updated GooglePlayServices to 12.0.1
+
 # notificare-push-lib-android 1.13.4
 
 Fixed a bug where unknown passes would crash passbook viewer

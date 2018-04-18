@@ -1,46 +1,55 @@
 Changelog
 =========
+# notificare-push-lib-android 1.14.0
+
+-Updated GooglePlayServices to 15.0.0
+- Removed Legacy GCM mode
+
+# notificare-support-lib-android 1.4.3
+
+- Updated Support Libraries to 27.1.1
+
 # notificare-push-lib-android 1.13.5
 
-Updated GooglePlayServices to 12.0.1
+- Updated GooglePlayServices to 12.0.1
 
 # notificare-push-lib-android 1.13.4
 
-Fixed a bug where unknown passes would crash passbook viewer
-Updated GooglePlayServices to 12.0.0
+- Fixed a bug where unknown passes would crash passbook viewer
+- Updated GooglePlayServices to 12.0.0
 
 # notificare-support-lib-android 1.4.2
 
-Updated Support Libraries to 27.1.0
+- Updated Support Libraries to 27.1.0
 
 # notificare-push-lib-android 1.13.3
 
-Check for null IntentReceiver in InstanceIDService
-Updated Support Libraries to 27.1.0
+- Check for null IntentReceiver in InstanceIDService
+- Updated Support Libraries to 27.1.0
 
 # notificare-push-lib-android 1.13.2
 
-Enable local storage in webviews if javascript is allowed
+- Enable local storage in webviews if javascript is allowed
 
 # notificare-push-lib-android 1.13.1
 
-Added logCustomEvent with callback
+- Added logCustomEvent with callback
 
 # notificare-push-lib-android 1.13.0
 
-Improve retry of API calls
-Add partial notification to inbox before full content is loaded
-Post partial notification to notification manager if content fetch fails
-Clear last known location when disabling location updates
+- Improve retry of API calls
+- Add partial notification to inbox before full content is loaded
+- Post partial notification to notification manager if content fetch fails
+- Clear last known location when disabling location updates
 
 # notificare-push-lib-android 1.12.2
 
-Updated GooglePlayServices to 11.8.0
+- Updated GooglePlayServices to 11.8.0
 
 # notificare-push-lib-android 1.12.1
 
-Updated GooglePlayServices to 11.6.2
-Updated Support Libraries to 27.0.2
+- Updated GooglePlayServices to 11.6.2
+- Updated Support Libraries to 27.0.2
 
 # notificare-support-lib-android 1.4.1
 
@@ -48,56 +57,56 @@ Updated Support Libraries to 27.0.2
 
 # notificare-push-lib-android 1.12.0
 
-Updated GooglePlayServices to 11.6.0
-Updated Support Libraries to 27.0.1
+- Updated GooglePlayServices to 11.6.0
+- Updated Support Libraries to 27.0.1
 
 # notificare-support-lib-android 1.4.0
 
-Updated Support Libraries to 27.0.1
+- Updated Support Libraries to 27.0.1
 
 # notificare-push-lib-android 1.11.0
 
-Added extra to asset group
+- Added extra to asset group
 
 # notificare-push-lib-android 1.10.1
 
-Updated GooglePlayServices to 11.4.2
-Updated Support Libraries to 26.1.0
+- Updated GooglePlayServices to 11.4.2
+- Updated Support Libraries to 26.1.0
 
 # notificare-support-lib-android 1.3.2
 
-Updated GooglePlayServices to 11.4.2
-Updated Support Libraries to 26.1.0
+- Updated GooglePlayServices to 11.4.2
+- Updated Support Libraries to 26.1.0
 
 # notificare-support-lib-android 1.3.1
 
-Fix dimissal of InternetConnectionActivty
+- Fix dimissal of InternetConnectionActivty
 
 # notificare-push-lib-android 1.10.0
 
-Support for Android Oreo
-Added polygon support for geofences
-Added scannable activity
+- Support for Android Oreo
+- Added polygon support for geofences
+- Added scannable activity
 
 # notificare-push-lib-android 1.9.11
 
-Ask for camera permission in actions when needed
-Fix incorrect handling of options menu in notifications
-Updated GooglePlayServices to 11.0.4
-Changed add to wallet icon to text
+- Ask for camera permission in actions when needed
+- Fix incorrect handling of options menu in notifications
+- Updated GooglePlayServices to 11.0.4
+- Changed add to wallet icon to text
 
 # notificare-push-lib-android 1.9.10
 
-Updated GooglePlayServices to 11.0.1
-Added FileProvider for camera actions
-Post AssetLoader async results on main thread
+- Updated GooglePlayServices to 11.0.1
+- Added FileProvider for camera actions
+- Post AssetLoader async results on main thread
 
 # notificare-push-lib-android 1.9.9
 
-Updated GooglePlayServices to 11.0.0
-Updated Support Libraries to 25.4.0
-Switch to Picasso for image loading
-Add ProGuard rules
+- Updated GooglePlayServices to 11.0.0
+- Updated Support Libraries to 25.4.0
+- Switch to Picasso for image loading
+- Add ProGuard rules
 
 # notificare-push-lib-android 1.9.8
 

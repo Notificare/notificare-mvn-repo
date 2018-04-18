@@ -1,5 +1,37 @@
 # Upgrade
 
+## Upgrade from 1.13.x to 1.14.0
+
+### Removed support for Legacy GCM mode
+
+Google Play Services 15.0.0 removed the necessary GCM dependencies, so the Notificare SDK can no longer support Legacy GCM mode.
+If you app uses it, please follow the upgrade instructions for 1.8.x to 1.9.0, where we introduced FCM. Classes and methods have been removed, so you should expect build errors if you didn't update your code yet.
+
+In short, your AndroidManifest should now only need the following Service entries for Notificare:
+
+```xml
+        <service
+            android:name="re.notifica.push.fcm.PushService"
+            android:exported="false"
+            android:label="Notificare Push Service">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="re.notifica.push.fcm.InstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+```
+
+The entries for NotificationActivity, PassbookActivity and your IntentReceiver remain as they are.
+
+
 ## Upgrade from 1.10.x to 1.11.0
 
 #### Manifest update

@@ -4,7 +4,7 @@ A repository with artifacts for developing apps with the Notificare SDK
 
 ## Notificare Push SDK for Android
 
-### BREAKING CHANGE in 1.10.0 !!
+### BREAKING CHANGE in 1.14.0 !!
 
 See UPGRADE.md for details
 
@@ -21,7 +21,7 @@ To be used in Android Studio, add the following to your app's Gradle config:
     }
 
     dependencies {
-        compile group: 're.notifica:notificare-push-lib-android:1.13.2'
+        implementation 're.notifica:notificare-push-lib-android:1.14.0'
     }
 ```
 

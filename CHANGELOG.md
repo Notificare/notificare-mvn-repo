@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-push-lib-android 1.14.1
+
+- Perform token unregistration off the main thread
+
 # notificare-push-lib-android 1.14.0
 
 -Updated GooglePlayServices to 15.0.0

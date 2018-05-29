@@ -1,5 +1,12 @@
 Changelog
 =========
+
+# notificare-push-lib-android 1.14.2
+- Updated GooglePlayServices to 15.0.1 / 15.0.2
+- Updated Firebase Core to 16.0.0
+- Updated Firebase Messaging to 17.0.0
+- Updated AltBeacon to 2.14
+
 # notificare-push-lib-android 1.14.1
 
 - Perform token unregistration off the main thread

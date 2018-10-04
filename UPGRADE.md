@@ -1,5 +1,15 @@
 # Upgrade
 
+## Upgrade from 1.14.x to 1.15.0
+
+### Manifest update
+
+Dependency on SDK level 28 and Google Play Services Maps makes the following entry necessary:
+
+```xml
+    <uses-library android:name="org.apache.http.legacy" android:required="false" />
+```
+
 ## Upgrade from 1.13.x to 1.14.0
 
 ### Removed support for Legacy GCM mode

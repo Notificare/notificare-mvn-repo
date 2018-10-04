@@ -1,6 +1,16 @@
 Changelog
 =========
 
+# notificare-push-lib=android  1.15.0
+
+- Updated GooglePlayServices to 16.0.0
+- Updated Firebase Messaging to 17.3.0
+- Updated AltBeacon to 2.15
+
+# notificare-support-lib-android 1.5.0
+
+- Updated Support Libraries to 28.0.0
+
 # notificare-push-lib-android 1.14.2
 - Updated GooglePlayServices to 15.0.1 / 15.0.2
 - Updated Firebase Core to 16.0.0

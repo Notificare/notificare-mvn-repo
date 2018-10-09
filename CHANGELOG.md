@@ -1,5 +1,37 @@
 Changelog
 =========
+# notificare-core 2.0.0
+
+- Split AAR into notificare-core, notificare-location, notificare-beacon and notificare-scannable for easy dependency management
+- Added necessary AndroidManifest entries to the AAR, only Activities and IntentReceiver are needed
+- Moved BaseIntentReceiver to re.notifica.app
+- Moved DefaultIntentReceiver to re.notifica.app
+- Moved TaskService to re.notifica.service
+- Moved BaseApplication to re.notifica.app
+- Moved BaseActivity to re.notifica.app, lifecycle handling is done automatically, no need to setForeground anymore in the onResume etc.
+- InboxManager getItems replaced by LiveData getObservableItems
+- InboxManager getUnreadCount replaced by LiveData getObservableUnreadCount
+- Removed onRegistrationFinished -> onDeviceRegistered
+- Removed onUnregistrationFinished
+- Checking isNotificationsEnabled defaults to false, call enableNotifications at least once, will still honor SharedPreferences stored
+- Checking isLocationsEnabled defaults to false, call enableLocationUpdates at least once, will still honor SharedPreferences stored
+- Now onReady calls after device is registered, no need to wait for onDeviceRegistered
+- Registering device does not automatically sync device tags, needs to be explicitly called, e.g. in onDeviceRegistered
+- Added addDeviceTag and removeDeviceTags methods
+- New method onDeviceRegistered called with every attempt, even if no change, now is passed the NotificareDevice
+- NotificareInboxItem now has message, title, subtitle, attachment, extra
+- SystemIntentReceiver added to default manifest to handle timezone and locale changes even if app is closed
+- Only unknown system notifications are reported to the intent receiver
+- In WebViews, JavaScript / DomStorage always allowed, cache cleared on loading web content
+- In WebView, actions are handled also from URL query parameters
+- Added bluetoothEnabled flag
+- Added course, speed and altitude to device
+- Added verticalAccuracy to region session locations
+- Use actual sent time as time in inbox and notifications
+- Add locale region to device registration
+- Added NotificationFragmentFactory to get a fragment to insert in custom notification activity
+- Added callback interface for custom notification activities that add the Notification fragment themselves
+- Remove activity animations from NotificationActivity
 
 # notificare-push-lib=android  1.15.0
 

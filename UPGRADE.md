@@ -1,5 +1,186 @@
 # Upgrade
 
+## Upgrade to 2.0.0
+
+### Prerequisites
+
+Your app **must** be ready for Notificare SDK 1.14 or 1.15. If not, please follow the upgrade steps below until you can build and run against (at least) 1.14
+
+### Android SDK compatibility
+
+Your app must be compiled with Android SDK 28, minimal Android SDK version for your app is 16 (i.e., Android JellyBean / 4.1), but for security it's a good idea to set your minimal SDK version to 19.
+
+### New Gradle dependencies
+
+The SDK is now split in 4 parts, for easy (transitive) dependency management. Replace existing entries in your `app/build.gradle` with the new entries:
+
+```java
+
+    // implementation 're.notifica:notificare-push-lib-android:1.15.0'      // <-- will be replaced by notificare-core
+    // implementation 'org.altbeacon:android-beacon-library:2.14'           // <-- will be taken care of by the new notificare-beacon
+    // implementation 'com.google.android.gms:play-services-vision:16.2.0'  // <-- will be taken care of by the new notificare-scannable
+
+    implementation 're.notifica:notificare-core:2.0.0'
+    implementation 're.notifica:notificare-location:2.0.0'    // <-- if you want to use location, geofences
+    implementation 're.notifica:notificare-beacon:2.0.0'      // <-- if you want to use beacons
+    implementation 're.notifica:notificare-scannable:2.0.0'   // <-- if you want to use scannable items and tags
+```
+
+### Remove unnecessary Manifest entries
+
+The following entries will be automatically added by the SDK and can be *removed* :
+
+```xml
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <service
+        android:name="re.notifica.push.fcm.PushService"
+        android:exported="false"
+        android:label="Notificare Push Service">
+        <intent-filter>
+            <action android:name="com.google.firebase.MESSAGING_EVENT" />
+        </intent-filter>
+    </service>
+    <service
+        android:name="re.notifica.push.fcm.InstanceIDService"
+        android:exported="false">
+        <intent-filter>
+            <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+        </intent-filter>
+    </service>
+
+    <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode" />
+
+    <uses-library android:name="org.apache.http.legacy" android:required="false" />
+```
+
+### Class and Namespace changes
+
+`DefaultIntentReceiver`, `BaseApplication` and `BaseActivity` moved to the `re.notifica.app` package
+
+The Activity Lifecycle events are now handled automatically by Notificare. If your activities call `setForeground()`, `setBackground()`, `logStartSession()` or `logEndSession()` in their `onResume` / `onPause`, these can be removed.
+
+JavaScript is now always allowed in WebViews, so the setAllowJavascript() call is gone.
+
+The Notificare UserPreferencesActivity is removed, your app needs to implement a settings fragment or activity itself.
+
+### Intent Receiver changes
+
+The Notificare SDK now automatically registers a device at launch, so you will always have a device token when `onReady` is called. On top of that, the new `onDeviceRegistered` method will be called each time a device is registered.
+
+Of course, as always, you will still need to call `enableNotifications` if you want to receive Push Notifications. If you don't, the device will be registered for inbox messages only. Calling `disableNotifications` will set the device to non-push.
+
+This also means you can call `enableLocationUpdates` and `enableBeacons` in the `onReady` method.
+
+The `isNotificationsEnabled()` and `isLocationUpdatesEnabled()` checks will now return `false` if you didn't call them yet. Of course, in an existing install, the status of notifications / location updates will be honored.
+
+The `onRegistrationFinished` and `onUnregistrationFinished` methods are removed from the intent receiver.
+
+In short, your intent receiver should look something like this:
+
+```java
+
+    @Override
+    public void onReady() {
+        // Check if notifications are enabled, by default they are not.
+        // Make sure to call enableNotifications() after on-boarding (or from your app settings view)
+        if (Notificare.shared().isNotificationsEnabled()) {
+            Notificare.shared().enableNotifications();
+        }
+        // Check if location updates are enabled, by default they are not.
+        // Make sure to call enableLocationUpdates() after on-boarding (or from your app settings view)
+        if (Notificare.shared().isLocationUpdatesEnabled()) {
+            Notificare.shared().enableLocationUpdates();
+        }
+
+
+        // If you want to be sure tags are synced from the Notificare API
+        Notificare.shared().fetchDeviceTags(new NotificareCallback<List<String>>() {
+
+            @Override
+            public void onError(NotificareError arg0) {
+
+            }
+
+            @Override
+            public void onSuccess(List<String> arg0) {
+
+            }
+
+        });
+    }
+
+    @Override
+    public void onDeviceRegistered(NotificareDevice device) {
+        // At this point, a device is registered with Notificare API
+    }
+```
+
+For registrations as a user nothing really changed, but as a reminder, the best way to do it would be to call
+
+```java
+
+    Notificare.shared().setUserId("123456789");
+    Notificare.shared().setUserName("My Name");
+    Notificare.shared().registerDevice(new NotificareCallback<String> ({
+        // etc.
+    }))
+```
+
+right after the user finished login in your Activity. Notificare SDK will remember the userID you set, so there is no need to do this anywhere in the intent receiver.
+
+### Inbox is now LiveData
+
+Instead of calling and requesting data every time from your inbox views, just hook up an observer to the inbox as LiveData, for example in your fragment `onCreateView` do something like this
+
+```java
+    LiveData<SortedSet<NotificareInboxItem>> temp = Notificare.shared().getInboxManager().getObservableItems();
+    temp.observe(this, notificareInboxItems -> {
+        Log.i(TAG, "inbox changed");
+        inboxListAdapter.clear();
+        if (notificareInboxItems != null) {
+            inboxListAdapter.addAll(notificareInboxItems);
+        }
+    });
+```
+
+As with all LiveData observers, automatic handling of the lifecycle events of your UI will make sure any changes will end up in your observer.
+
+Of course, your observer should be a bit smarter and use a RecyclerView with check for differences instead of just replacing the full list.
+
+
+### NotificationActivity changes
+
+The NotificationActivity will now open and close without animations and honor transparency styles from your AndroidManifest. A good way to let the (alert type) notifications appear transparently on top of your existing task stack would be:
+
+```xml
+    <activity
+        android:name="re.notifica.ui.NotificationActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme.Translucent"
+        android:parentActivityName="re.notifica.demo.MainActivity" />
+    </activity>
+```
+
+and then define styles as
+
+```xml
+    <style name="AppTheme.Translucent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+```
+
+The NotificationActivity now uses callbacks from the notification fragments, which means it is now easier for you to display notification fragments in your own Activities. For more details, take a look at the [customization docs](https://docs.notifica.re/sdk/v2/android/customizations).
+
+
 ## Upgrade from 1.14.x to 1.15.0
 
 ### Manifest update

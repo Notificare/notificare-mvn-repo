@@ -1,5 +1,10 @@
 Changelog
 =========
+# notificare-core 2.0.1
+
+- Fix incorrect parsing of values in title, subtitle, attachment and extra when constructing an inbox item from JSON
+- Updated dependency GooglePlayServices Vision to 17.0.2
+
 # notificare-core 2.0.0
 
 - Split AAR into notificare-core, notificare-location, notificare-beacon and notificare-scannable for easy dependency management

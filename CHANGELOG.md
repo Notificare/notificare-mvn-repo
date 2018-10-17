@@ -1,5 +1,10 @@
 Changelog
 =========
+# notificare-core 2.0.2
+
+- Fix loading of userId and userName on launch
+- Updated dependency Firebase Messaging to 17.3.4
+
 # notificare-core 2.0.1
 
 - Fix incorrect parsing of values in title, subtitle, attachment and extra when constructing an inbox item from JSON

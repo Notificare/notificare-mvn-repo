@@ -1,5 +1,12 @@
 Changelog
 =========
+# notificare-core 2.0.3
+
+- Add socket stats tag to requests
+- Prevent inboxmanager from refreshing too early
+- Prevent device being registered before FCM token is retrieved
+- Update Firebase Core and AltBeacon dependency
+
 # notificare-core 2.0.2
 
 - Fix loading of userId and userName on launch

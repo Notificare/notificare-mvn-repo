@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-core 2.0.4
+
+- Fix marking local inbox item as read when deeplink is opened from inbox
+
 # notificare-core 2.0.3
 
 - Add socket stats tag to requests

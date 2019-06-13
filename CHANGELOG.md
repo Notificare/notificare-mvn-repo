@@ -1,5 +1,12 @@
 Changelog
 =========
+# notificare-core 2.0.6
+
+- Updated dependencies
+- Correctly restore passbook type from DataStore when loading wallet
+- Added passbook legacy mode flag
+- Added passbook webview
+
 # notificare-core 2.0.5
 
 - Fix marking local inbox item as read when passbook is opened from inbox

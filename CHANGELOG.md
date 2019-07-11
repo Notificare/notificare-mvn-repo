@@ -1,5 +1,10 @@
 Changelog
 =========
+# notificare-core 2.0.7
+
+- Ignore invalid location coordinates
+- Allow null value for RemoteMessage messageId
+
 # notificare-core 2.0.6
 
 - Updated dependencies

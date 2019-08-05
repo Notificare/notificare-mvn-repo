@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-core 2.0.8
+
+- Ignore request portrait orientation on Android O
+
 # notificare-core 2.0.7
 
 - Ignore invalid location coordinates

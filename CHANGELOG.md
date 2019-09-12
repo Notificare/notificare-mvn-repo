@@ -1,5 +1,15 @@
 Changelog
 =========
+
+# notificare-core  2.1.0
+
+- Update to AndroidX
+- Update to Android Q
+- Added background location permission
+- Added new listener interface for foreground notifications
+- Added grouped notifications from remote message payload
+- Pass through presentation property of remote message to foreground notification listener
+
 # notificare-core 2.0.8
 
 - Ignore request portrait orientation on Android O

@@ -1,5 +1,23 @@
 # Upgrade
 
+## Upgrade to 2.1.0
+
+### AndroidX
+
+To use this version of the SDK, your project must use the AndroidX libraries. If this is already the case, building against this update will work without any changes.
+If your project still uses the old Android Support Library, this would be a perfect time to upgrade. Detailed instructions can be found on the [Android Developer website](https://developer.android.com/jetpack/androidx/migrate)
+
+### Background location updates
+
+The notificare-location dependency will now add the `ACCESS_BACKGROUND_LOCATION` permission to your AndroidManifest. Upgraded phones will automatically get the permission for background locations if users allowed location updates.
+For new installs, calling `Notificare.shared().requestLocationPermission` will ask for background location updates. Likewise, `Notificare.shared().hasLocationPermissionGranted` will only return true if the user allowed background location updates ('always')
+If the user only allows foreground location updates, geofences will not work and locations will only be updated in background. See [Notificare Docs](https://docs.notifica.re/sdk/v2/android/implementation/location-services/) for more info and code examples.
+
+### New Foreground Listener
+
+The `OnNotificationReceivedListener` interface is superseded by the new `OnNotificareNotificationListener` interface. This interface has a `onNotificareNotification` method which receives both the Notification as well as the corresponding Inbox Item (if using inbox).
+It also will pass along the `shouldPresent` boolean which will be set to true if the `presentation` option is selected when sending a notification from the Dashboard.
+
 ## Upgrade to 2.0.0
 
 ### Prerequisites

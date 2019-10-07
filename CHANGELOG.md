@@ -1,6 +1,10 @@
 Changelog
 =========
 
+# notificare-core 2.1.1
+
+- Ignore equality check on inbox items
+
 # notificare-core  2.1.0
 
 - Update to AndroidX
@@ -9,6 +13,10 @@ Changelog
 - Added new listener interface for foreground notifications
 - Added grouped notifications from remote message payload
 - Pass through presentation property of remote message to foreground notification listener
+
+# notificare-core 2.0.9
+
+- Ignore equality check on inboxitems
 
 # notificare-core 2.0.8
 

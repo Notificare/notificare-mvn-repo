@@ -1,5 +1,8 @@
 Changelog
 =========
+# notificare-core 2.1.2
+
+- Check for empty notification tags
 
 # notificare-core 2.1.1
 

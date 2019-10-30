@@ -1,5 +1,10 @@
 Changelog
 =========
+# notificare-core 2.2.0
+
+- Refactored beacon client to interface with separate implementation in notificare-beacon
+- Request FCM token at launch so we don't miss newToken intents
+
 # notificare-core 2.1.2
 
 - Check for empty notification tags

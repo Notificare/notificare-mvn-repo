@@ -1,5 +1,13 @@
 Changelog
 =========
+
+# notificare-core 2.2.1
+
+- Hide action menu on URL and WebView notifications when action links present in HTML
+- Allow relative links in WebView
+- Fix incorrect URL handling in Android 7+
+- No longer exclude deeplink intents from recents 
+
 # notificare-core 2.2.0
 
 - Refactored beacon client to interface with separate implementation in notificare-beacon

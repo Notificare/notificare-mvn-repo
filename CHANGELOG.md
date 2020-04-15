@@ -1,5 +1,12 @@
 Changelog
 =========
+# notificare-support-lib 2.0.0
+
+- Migrated to AndroidX
+
+# notificare-core 2.2.2
+
+- Updated dependencies
 
 # notificare-core 2.2.1
 

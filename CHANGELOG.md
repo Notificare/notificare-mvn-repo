@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-core 2.2.3
+
+- Add fix for video playing issues in background
+
 # notificare-support-lib 2.0.0
 
 - Migrated to AndroidX

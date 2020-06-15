@@ -1,5 +1,14 @@
 Changelog
 =========
+# notificare-core 2.3.0
+
+- Instantiate beacon client at launch, configure after application info is loaded
+- Added inbox expiration and visibility
+- Maximise screen intensity when viewing passbook 
+- Updated deprecated oauth2 library dependencies
+- Updated to AndroidX TaskWorker
+- Depend on Glide instead of Picasso for image manipulation
+
 # notificare-core 2.2.3
 
 - Add fix for video playing issues in background

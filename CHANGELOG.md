@@ -1,5 +1,13 @@
 Changelog
 =========
+# notificare-common 2.4.0-beta-1
+- Split core, location and scannable for Google Play Services and Huawei Mobile Services
+- Added location accuracy to device model 
+- Added helper methods to deal with new background location permissions in Android 11
+- Added markAll 
+- Added configurable settings for toasts and progress bar in notification activity
+- Updated Android billing to v3
+
 # notificare-core 2.3.0
 
 - Instantiate beacon client at launch, configure after application info is loaded

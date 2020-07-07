@@ -1,5 +1,35 @@
 # Upgrade
 
+## Upgrade to 2.4.0-beta-2
+
+### Huawei Mobile Services
+
+This version splits core, location and scannable between Google Play Services and Huawei Mobile Services
+
+```gradle
+    implementation 're.notifica:notificare-core:2.4.0-beta-2'            // <-- if you want run your app on Google Play
+    implementation 're.notifica:notificare-core-hms:2.4.0-beta-2'        // <-- if you want run your app on HMS
+    implementation 're.notifica:notificare-location:2.4.0-beta-2'        // <-- if you want to use location, geofences
+    implementation 're.notifica:notificare-location-hms:2.4.0-beta-2'    // <-- if you want to use location, geofences
+    implementation 're.notifica:notificare-beacon:2.4.0-beta-2'          // <-- if you want to use beacons
+    implementation 're.notifica:notificare-scannable:2.4.0-beta-2'       // <-- if you want to use scannable items and tags
+    implementation 're.notifica:notificare-scannable-hms:2.4.0-beta-2'   // <-- if you want to use scannable items and tags
+```
+
+### Android 11 Background Location Permission
+
+The `notificare-location` dependency will still add the `ACCESS_BACKGROUND_LOCATION` permission to your AndroidManifest, but one important change is the Notificare SDK now sticks to the preferred 2-step permission request, 
+where your app first asks for foreground permission and only after been granted, will ask for explicit background permission. The reason for this is that with Android 11, your app can not ask for background permission together with 
+foreground permission, they have to be asked separately. 
+This means that for new installs, calling `Notificare.shared().requestLocationPermission` will only ask for foreground location updates in Android 11. 
+Likewise, `Notificare.shared().hasLocationPermissionGranted` will return true if the user allowed foreground location updates ('when in use').
+Be aware that users can opt for `One-Time` permission, so be sure to check for permissions granted every time the app launches.
+If the user only allows foreground location updates, geofences will not work and locations will only be updated when running in the foreground.
+
+To ask for background permission, add an extra check and explain why your app needs to have background location permission. In Android 11, this can only be explicitly set by the user in the Settings screen of the device.
+
+The Notificare SDK gives you a couple of convenience methods to request permissions, check for the need to show rationale and handle permission, for example:
+
 ## Upgrade to 2.1.0
 
 ### AndroidX

@@ -30,6 +30,74 @@ To ask for background permission, add an extra check and explain why your app ne
 
 The Notificare SDK gives you a couple of convenience methods to request permissions, check for the need to show rationale and handle permission, for example:
 
+```java
+class MyActivity extends Activity {
+
+    // ... more code
+
+    public void askForegroundPermission() {
+        if (!Notificare.shared().hasForegroundLocationPermissionGranted()) {
+            if (Notificare.shared().shouldShowForegroundRequestPermissionRationale(getActivity())) {
+                // Here we should show a dialog explaining location updates
+                new AlertDialog.Builder(this)
+                    .setTitle(R.string.app_name)
+                    .setMessage(R.string.alert_foreground_location_permission_rationale)
+                    .setCancelable(true)
+                    .setNegativeButton(R.string.button_location_permission_rationale_cancel, (dialog, id) -> Log.i(TAG, "location not allowed"))
+                    .setPositiveButton(R.string.button_location_permission_rationale_ok, (dialog, id) -> Notificare.shared().requestForegroundLocationPermission(this, LOCATION_PERMISSION_REQUEST_CODE))
+                    .show();
+            } else {
+                Notificare.shared().requestForegroundLocationPermission(this, LOCATION_PERMISSION_REQUEST_CODE);
+            }
+        }
+    }
+
+    public void askBackgroundPermission() {
+        if (!Notificare.shared().hasForegroundLocationPermissionGranted()) {
+            askForegroundPermission();
+        } else if (!Notificare.shared().hasBackgroundLocationPermissionGranted()) {
+            if (Notificare.shared().shouldShowBackgroundRequestPermissionRationale(getActivity())) {
+                // Here we should show a dialog explaining location updates
+                new AlertDialog.Builder(this)
+                    .setTitle(R.string.app_name)
+                    .setMessage(R.string.alert_background_location_permission_rationale)
+                    .setCancelable(true)
+                    .setNegativeButton(R.string.button_location_permission_rationale_cancel, (dialog, id) -> Log.i(TAG, "background location not allowed"))
+                    .setPositiveButton(R.string.button_location_permission_rationale_ok, (dialog, id) -> Notificare.shared().requestBackgroundLocationPermission(this, BACKGROUND_LOCATION_PERMISSION_REQUEST_CODE))
+                    .show();
+            } else {
+                Notificare.shared().requestBackgroundLocationPermission(this, BACKGROUND_LOCATION_PERMISSION_REQUEST_CODE);
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        switch (requestCode) {
+            case LOCATION_PERMISSION_REQUEST_CODE:
+                if (Notificare.shared().checkRequestForegroundLocationPermissionResult(permissions, grantResults)) {
+                    Log.i(TAG, "foreground locations permission granted");
+                    Notificare.shared().enableLocationUpdates();
+                    if (BuildConfig.ENABLE_BEACONS) {
+                        Notificare.shared().enableBeacons(30000);
+                    }
+                }
+                break;
+            case BACKGROUND_LOCATION_PERMISSION_REQUEST_CODE:
+                if (Notificare.shared().checkRequestBackgroundLocationPermissionResult(permissions, grantResults)) {
+                    Log.i(TAG, "background location permission granted");
+                    Notificare.shared().enableLocationUpdates();
+                    if (BuildConfig.ENABLE_BEACONS) {
+                        Notificare.shared().enableBeacons(30000);
+                    }
+                }
+                break;
+            // ... more cases for permission requests
+        }
+    }
+}
+```
+
 ## Upgrade to 2.1.0
 
 ### AndroidX

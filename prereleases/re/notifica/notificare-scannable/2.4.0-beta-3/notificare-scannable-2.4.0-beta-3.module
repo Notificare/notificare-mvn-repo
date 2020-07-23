@@ -1,0 +1,141 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "re.notifica",
+    "module": "notificare-scannable",
+    "version": "2.4.0-beta-3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.1.1",
+      "buildId": "agdfvxiaw5elri7cxxfs2rhwdm"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.4.0-beta-3"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.1.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-vision",
+          "version": {
+            "requires": "20.1.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-scannable-2.4.0-beta-3.aar",
+          "url": "notificare-scannable-2.4.0-beta-3.aar",
+          "size": 24052,
+          "sha512": "4ba2999e033b1dc89c0af8fb88e73e28c31c40266251a0e74d590545dcf675d997795dddcf76ae020fd673e5b751055cb29791363eed808d2c48357e398b3d7a",
+          "sha256": "5d1ac114c9841ae063fd2584d160b8fc7a321c2ef3b97570c8cb25ff86f420a0",
+          "sha1": "4660c12d9d748a6bb40b03671739c35753667f74",
+          "md5": "6f1f7d8b45be5bbe0dca8fb60a3dbe70"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.4.0-beta-3"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.1.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-vision",
+          "version": {
+            "requires": "20.1.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-scannable-2.4.0-beta-3.aar",
+          "url": "notificare-scannable-2.4.0-beta-3.aar",
+          "size": 24052,
+          "sha512": "4ba2999e033b1dc89c0af8fb88e73e28c31c40266251a0e74d590545dcf675d997795dddcf76ae020fd673e5b751055cb29791363eed808d2c48357e398b3d7a",
+          "sha256": "5d1ac114c9841ae063fd2584d160b8fc7a321c2ef3b97570c8cb25ff86f420a0",
+          "sha1": "4660c12d9d748a6bb40b03671739c35753667f74",
+          "md5": "6f1f7d8b45be5bbe0dca8fb60a3dbe70"
+        }
+      ]
+    }
+  ]
+}

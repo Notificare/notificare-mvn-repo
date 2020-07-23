@@ -1,5 +1,14 @@
 Changelog
 =========
+# notificare-common 2.4.0-beta-3
+- Added dynamic links
+
+# notificare-common 2.4.0-beta-2
+- Added Rate and Store for AppGallery
+- Build against Android SDK level 30
+- Updated AndroidX dependencies
+- Removed deprecated classes and methods
+
 # notificare-common 2.4.0-beta-1
 - Split core, location and scannable for Google Play Services and Huawei Mobile Services
 - Added location accuracy to device model 

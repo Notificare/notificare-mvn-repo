@@ -1,0 +1,115 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "re.notifica",
+    "module": "notificare-location",
+    "version": "2.4.0-beta-3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.1.1",
+      "buildId": "agdfvxiaw5elri7cxxfs2rhwdm"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.4.0-beta-3"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-location",
+          "version": {
+            "requires": "17.0.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-location-2.4.0-beta-3.aar",
+          "url": "notificare-location-2.4.0-beta-3.aar",
+          "size": 37871,
+          "sha512": "c923834e1417b1b6e6c5ed9126f2186cb8a0da3f37aae1d96d0da2b5fa7b2238aa70f3aa314b73964247a4b617721d10c5d036357dfce43d62529efa7053f02b",
+          "sha256": "375936534d19f6eefdb95fb3c2fc76a08e6177c356a0253671d4a52b8219c193",
+          "sha1": "488dfc5fd903d39c8272fe097a143ab6f962e7ea",
+          "md5": "f17e7e832b0a0f2fa48aee4227804bf1"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.4.0-beta-3"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-location",
+          "version": {
+            "requires": "17.0.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-location-2.4.0-beta-3.aar",
+          "url": "notificare-location-2.4.0-beta-3.aar",
+          "size": 37871,
+          "sha512": "c923834e1417b1b6e6c5ed9126f2186cb8a0da3f37aae1d96d0da2b5fa7b2238aa70f3aa314b73964247a4b617721d10c5d036357dfce43d62529efa7053f02b",
+          "sha256": "375936534d19f6eefdb95fb3c2fc76a08e6177c356a0253671d4a52b8219c193",
+          "sha1": "488dfc5fd903d39c8272fe097a143ab6f962e7ea",
+          "md5": "f17e7e832b0a0f2fa48aee4227804bf1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "re.notifica",
+    "module": "notificare-beacon",
+    "version": "2.4.0-beta-4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.1.1",
+      "buildId": "hnqabceot5cbzen47z4uuqdrku"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.4.0-beta-4"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "org.altbeacon",
+          "module": "android-beacon-library",
+          "version": {
+            "requires": "2.17.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-beacon-2.4.0-beta-4.aar",
+          "url": "notificare-beacon-2.4.0-beta-4.aar",
+          "size": 23305,
+          "sha512": "939c7dc22a6766e51604b0806aa6af0ac86d6a574466124dfb0a2cbc4f4cc3be6835ac3bcc0fd8cf9a67986bd9a1d159e93fcf24abafd5c07f5ee8a73a1cc074",
+          "sha256": "4faf2f04fd0c8ecaa600066689246ef135ba08429fa56d9eb7fd5bda4b9896f6",
+          "sha1": "6ba83737ba6252b7b1e791dccc00de7bd6c55993",
+          "md5": "71b90d5a6a0cff70cd8bddfc6a9c09fd"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.4.0-beta-4"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "org.altbeacon",
+          "module": "android-beacon-library",
+          "version": {
+            "requires": "2.17.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-beacon-2.4.0-beta-4.aar",
+          "url": "notificare-beacon-2.4.0-beta-4.aar",
+          "size": 23305,
+          "sha512": "939c7dc22a6766e51604b0806aa6af0ac86d6a574466124dfb0a2cbc4f4cc3be6835ac3bcc0fd8cf9a67986bd9a1d159e93fcf24abafd5c07f5ee8a73a1cc074",
+          "sha256": "4faf2f04fd0c8ecaa600066689246ef135ba08429fa56d9eb7fd5bda4b9896f6",
+          "sha1": "6ba83737ba6252b7b1e791dccc00de7bd6c55993",
+          "md5": "71b90d5a6a0cff70cd8bddfc6a9c09fd"
+        }
+      ]
+    }
+  ]
+}

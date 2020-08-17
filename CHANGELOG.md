@@ -1,5 +1,10 @@
 Changelog
 =========
+# notificare-common 2.4.0-beta-4
+- Allow hyphens in dynamic links prefixes
+- Update AndroidX dependencies
+- Updated Google Play Services dependencies
+
 # notificare-common 2.4.0-beta-3
 - Added dynamic links
 

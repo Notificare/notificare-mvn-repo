@@ -1,5 +1,11 @@
 Changelog
 =========
+# notificare-support-lib 2.1.0
+- Updated build tools to 30
+
+# notificare-common 2.4.0
+- Updated Google Play Services dependencies
+
 # notificare-common 2.4.0-beta-4
 - Allow hyphens in dynamic links prefixes
 - Update AndroidX dependencies

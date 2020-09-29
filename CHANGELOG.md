@@ -1,5 +1,12 @@
 Changelog
 =========
+# notificare-common 2.4.1
+- Updated dependencies
+- Prevent null values for visible from failing parceling of NotificareInboxItem
+
+# notificare-core 2.3.1
+- Prevent null values for visible from failing parceling of NotificareInboxItem
+
 # notificare-support-lib 2.1.0
 - Updated build tools to 30
 

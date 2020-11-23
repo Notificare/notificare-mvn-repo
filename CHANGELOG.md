@@ -1,5 +1,12 @@
 Changelog
 =========
+# notificare-common  2.4.2
+- Updated dependencies
+- Use FirebaseMessaging to retrieve FCM token
+- Add queries entry to manifest to allow querying for PKPass-capable apps
+- Unset system broadcast receiver on unlaunch
+- Keep application context when disabling billing
+
 # notificare-common 2.4.1
 - Updated dependencies
 - Prevent null values for visible from failing parceling of NotificareInboxItem

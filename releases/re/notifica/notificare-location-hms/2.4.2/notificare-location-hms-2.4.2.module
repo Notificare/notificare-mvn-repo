@@ -1,0 +1,141 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "re.notifica",
+    "module": "notificare-location-hms",
+    "version": "2.4.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.5",
+      "buildId": "lt3usfttqrfkxox2o3btruushq"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.4.2"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.huawei.hms",
+          "module": "location",
+          "version": {
+            "requires": "5.0.2.301"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-location-hms-2.4.2.aar",
+          "url": "notificare-location-hms-2.4.2.aar",
+          "size": 37873,
+          "sha512": "99d7e28337d49b8b477393a2cdd12b056e7060d9f9faed43ceb5f2d82c112f8b0bb7defb32241a46782afc2e0af2a4a5d1d8f66446ebc7f355a13262082cd3b3",
+          "sha256": "36fe8f2c98efeba2594f5da77fc07a5c25218e6e729c0cdf7266c33780fa6086",
+          "sha1": "03bd242801d9eb090ce2ca475a5a8faf874baa51",
+          "md5": "09113db37db578146f4074a4354065ea"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.4.2"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.huawei.hms",
+          "module": "location",
+          "version": {
+            "requires": "5.0.2.301"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-location-hms-2.4.2.aar",
+          "url": "notificare-location-hms-2.4.2.aar",
+          "size": 37873,
+          "sha512": "99d7e28337d49b8b477393a2cdd12b056e7060d9f9faed43ceb5f2d82c112f8b0bb7defb32241a46782afc2e0af2a4a5d1d8f66446ebc7f355a13262082cd3b3",
+          "sha256": "36fe8f2c98efeba2594f5da77fc07a5c25218e6e729c0cdf7266c33780fa6086",
+          "sha1": "03bd242801d9eb090ce2ca475a5a8faf874baa51",
+          "md5": "09113db37db578146f4074a4354065ea"
+        }
+      ]
+    }
+  ]
+}

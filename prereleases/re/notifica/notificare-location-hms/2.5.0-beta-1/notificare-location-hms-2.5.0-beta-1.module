@@ -1,0 +1,141 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "re.notifica",
+    "module": "notificare-location-hms",
+    "version": "2.5.0-beta-1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.5",
+      "buildId": "7uk4nzyzwvgqbptkullobh7ley"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.5.0-beta-1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.huawei.hms",
+          "module": "location",
+          "version": {
+            "requires": "5.0.2.301"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-location-hms-2.5.0-beta-1.aar",
+          "url": "notificare-location-hms-2.5.0-beta-1.aar",
+          "size": 39809,
+          "sha512": "9d889d73ba8eff52729f344fa6e8de7279451874b7b550a54b5b59d1b20c11d9a0490f22bdd149ca9df47a5cedc31537b2429cdd286c0413c1b22da34100a5ec",
+          "sha256": "863283b793fed7e507cd3e7e86ece1da8aafb63a55c6be0f59a71b15023f1466",
+          "sha1": "594a3f5f54b19cc2990bee7c16e29b5d0d38920f",
+          "md5": "c609eb8d9bf5838e82d53bfe24a8f9c9"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.5.0-beta-1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.huawei.hms",
+          "module": "location",
+          "version": {
+            "requires": "5.0.2.301"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-location-hms-2.5.0-beta-1.aar",
+          "url": "notificare-location-hms-2.5.0-beta-1.aar",
+          "size": 39809,
+          "sha512": "9d889d73ba8eff52729f344fa6e8de7279451874b7b550a54b5b59d1b20c11d9a0490f22bdd149ca9df47a5cedc31537b2429cdd286c0413c1b22da34100a5ec",
+          "sha256": "863283b793fed7e507cd3e7e86ece1da8aafb63a55c6be0f59a71b15023f1466",
+          "sha1": "594a3f5f54b19cc2990bee7c16e29b5d0d38920f",
+          "md5": "c609eb8d9bf5838e82d53bfe24a8f9c9"
+        }
+      ]
+    }
+  ]
+}

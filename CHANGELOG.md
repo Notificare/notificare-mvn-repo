@@ -1,5 +1,12 @@
 Changelog
 =========
+# notificare-common 2.5.0
+- Updated dependencies
+- Allow any URL to be opened from a link in webview by default regardless of intent queries
+- Allow beacons to be scanned by a foreground service
+- Update location services auth status when permissions change
+- Refresh geofences when background permission granted
+
 # notificare-common  2.4.2
 - Updated dependencies
 - Use FirebaseMessaging to retrieve FCM token

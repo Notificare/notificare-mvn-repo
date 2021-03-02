@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-common 2.5.1
+- Updated dependencies
+- Only show inbox items with an actual inbox item id
+
 # notificare-common 2.5.0
 - Updated dependencies
 - Allow any URL to be opened from a link in webview by default regardless of intent queries

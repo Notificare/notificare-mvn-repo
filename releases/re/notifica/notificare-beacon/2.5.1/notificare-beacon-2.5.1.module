@@ -1,0 +1,141 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "re.notifica",
+    "module": "notificare-beacon",
+    "version": "2.5.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.5",
+      "buildId": "xfqyhnzkqvbnlkaqbvm6qbtfeu"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.5.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "org.altbeacon",
+          "module": "android-beacon-library",
+          "version": {
+            "requires": "2.17.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-beacon-2.5.1.aar",
+          "url": "notificare-beacon-2.5.1.aar",
+          "size": 25100,
+          "sha512": "c5851e8703d22b9057c815d715f596ac3d961533d16bce78f98eed86fcd63c5396547ab85efd02890b2843c8857095601220d88bb53f6827858f0dc557667bde",
+          "sha256": "018ad3fc988cc13d59c7896f0859ac921b4ad626bda90c4b30d73a8a23319a11",
+          "sha1": "3640541349bc319c4ff02fa87cec7ff687097f49",
+          "md5": "f2445f4ad4fa66b7e718985aae4a412d"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.5.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "org.altbeacon",
+          "module": "android-beacon-library",
+          "version": {
+            "requires": "2.17.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-beacon-2.5.1.aar",
+          "url": "notificare-beacon-2.5.1.aar",
+          "size": 25100,
+          "sha512": "c5851e8703d22b9057c815d715f596ac3d961533d16bce78f98eed86fcd63c5396547ab85efd02890b2843c8857095601220d88bb53f6827858f0dc557667bde",
+          "sha256": "018ad3fc988cc13d59c7896f0859ac921b4ad626bda90c4b30d73a8a23319a11",
+          "sha1": "3640541349bc319c4ff02fa87cec7ff687097f49",
+          "md5": "f2445f4ad4fa66b7e718985aae4a412d"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-common 2.6.0
+- Updated dependencies
+- Add register test device
+
 # notificare-common 2.5.1
 - Updated dependencies
 - Only show inbox items with an actual inbox item id

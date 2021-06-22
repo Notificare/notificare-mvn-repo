@@ -1,6 +1,116 @@
 # Upgrade
 
-## Upgrade to 2.4.0-beta-2
+## Upgrade to 2.7.0
+
+### BREAKING CHANGE: Trampoline Intents
+
+From Android 12 and up, Notifications must open an activity from the Notification Manager.
+This means Notificare SDK can not act as a trampoline in the intent receiver anymore.
+Only non-UI clicks (in fact only callback actions with no interaction needed in the app) can still be handled by the intent receiver.
+
+This means that *all* other notifications and actions, including deeplinks, must be handled by the app's main activity.
+For that reason, the Notificare SDK introduces a new intent action `re.notifica.intent.action.RemoteMessageOpened`.
+
+Add the following entry to your AndroidManifest.xml to make your MainActivity respond to these intents
+
+```xml
+<activity android:name=".MainActivity">
+
+    <!-- existing intent filters  -->
+
+    <intent-filter>
+        <action android:name="re.notifica.intent.action.RemoteMessageOpened" />
+        <category android:name="android.intent.category.DEFAULT" />
+    </intent-filter>
+
+</activity>
+```
+
+The intent can then be handled by calling `handleTrampolineIntent` in your MainActivity
+
+For example:
+
+```java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+
+    // initialisation code...
+
+    handleIntent(getIntent());
+}
+
+@Override
+protected void onNewIntent(Intent intent) {
+    super.onNewIntent(intent);
+    handleIntent(intent);
+}
+
+protected void handleIntent(Intent intent) {
+    if (Notificare.shared().handleTrampolineIntent(intent)) {
+        Log.d(TAG, "trampoline intent handled");
+    } else {
+        // handle other intents
+    }
+}
+```
+
+### BREAKING CHANGE: Bluetooth Permissions
+
+From Android 12 and up, bluetooth scanning permissions have to be requested at runtime.
+The Notificare SDK 2.7 adds a couple of utility methods to check for and request the necessary permissions.
+
+- `hasBeaconSupport` to check if the device supports beacon scanning
+- `hasBluetoothScanPermissionGranted` to check if the user granted necessary permissions
+- `shouldShowBluetoothScanRequestPermissionRationale` to check if app should show a rationale dialog
+- `requestBluetoothScanPermission` to request permissions
+- `checkRequestBluetoothScanPermissionResult` to check permission request results
+
+For example:
+
+```java
+public void askBluetoothScanPermission() {
+    if (Notificare.shared().hasBeaconSupport()) {
+        if (!Notificare.shared().hasBluetoothScanPermissionGranted()) {
+            Log.i(TAG, "permission not granted");
+            if (Notificare.shared().shouldShowBluetoothScanRequestPermissionRationale(this)) {
+                // Here we should show a dialog explaining location updates
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setMessage("we would like your permission to scan for beacons")
+                        .setTitle(R.string.app_name)
+                        .setCancelable(true)
+                        .setNegativeButton("No thanks", (dialog, id) -> {
+                            Log.i(TAG, "bluetooth scan not agreed");
+                        });
+                builder.setPositiveButton("Yes", (dialog, id) -> Notificare.shared().requestBluetoothScanPermission(this, BLUETOOTH_SCAN_PERMISSION_REQUEST_CODE));
+                builder.create();
+                builder.show();
+            } else {
+                Notificare.shared().requestBluetoothScanPermission(this, BLUETOOTH_SCAN_PERMISSION_REQUEST_CODE);
+            }
+        } else {
+            Log.i(TAG, "bluetooth scan permission granted, we can scan beacons");
+            Notificare.shared().enableBeacons(30000);
+        }
+    }
+}
+
+@Override
+public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+    super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    switch (requestCode) {
+        case BLUETOOTH_SCAN_PERMISSION_REQUEST_CODE:
+            if (Notificare.shared().checkRequestBluetoothScanPermissionResult(permissions, grantResults)) {
+                Log.i(TAG, "bluetooth scan permission granted");
+                Notificare.shared().enableBeacons(30000);
+            }
+            break;
+    }
+}
+```
+
+
+## Upgrade to 2.4.0
 
 ### Huawei Mobile Services
 

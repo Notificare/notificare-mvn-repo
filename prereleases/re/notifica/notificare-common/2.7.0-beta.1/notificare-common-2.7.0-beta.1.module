@@ -1,0 +1,348 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "re.notifica",
+    "module": "notificare-common",
+    "version": "2.7.0-beta.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.http-client",
+          "module": "google-http-client-jackson2",
+          "version": {
+            "requires": "1.24.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.google.oauth-client",
+          "module": "google-oauth-client",
+          "version": {
+            "requires": "1.24.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.fragment",
+          "module": "fragment",
+          "version": {
+            "requires": "1.4.0-alpha03"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.room",
+          "module": "room-runtime",
+          "version": {
+            "requires": "2.4.0-alpha03"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-livedata",
+          "version": {
+            "requires": "2.4.0-alpha02"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-common-java8",
+          "version": {
+            "requires": "2.4.0-alpha02"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.work",
+          "module": "work-runtime",
+          "version": {
+            "requires": "2.7.0-alpha04"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.4.0-alpha02"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.exifinterface",
+          "module": "exifinterface",
+          "version": {
+            "requires": "1.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.github.bumptech.glide",
+          "module": "glide",
+          "version": {
+            "requires": "4.12.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-common-2.7.0-beta.1.aar",
+          "url": "notificare-common-2.7.0-beta.1.aar",
+          "size": 690802,
+          "sha512": "6f935a9de7b0657cc9f64cfe0b443ecd1c97a9788b8239d733c7915319f0671bd7116ee1c3ef9029e9568af8cd02d28f562516526dead2531e5d58b32f5fc8ef",
+          "sha256": "d48810e905373c0338bc73ef4ba4af6bb81d8e9b03aa4b9668e6f9ba036a6abc",
+          "sha1": "c9c7f2b862cce3ddbbad0197cfb50b40532d4b8d",
+          "md5": "b7d5e8be22e390d9ec52a6f1c34904a3"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.http-client",
+          "module": "google-http-client-jackson2",
+          "version": {
+            "requires": "1.24.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.google.oauth-client",
+          "module": "google-oauth-client",
+          "version": {
+            "requires": "1.24.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.fragment",
+          "module": "fragment",
+          "version": {
+            "requires": "1.4.0-alpha03"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.room",
+          "module": "room-runtime",
+          "version": {
+            "requires": "2.4.0-alpha03"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-livedata",
+          "version": {
+            "requires": "2.4.0-alpha02"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-common-java8",
+          "version": {
+            "requires": "2.4.0-alpha02"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.work",
+          "module": "work-runtime",
+          "version": {
+            "requires": "2.7.0-alpha04"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.4.0-alpha02"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.exifinterface",
+          "module": "exifinterface",
+          "version": {
+            "requires": "1.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.github.bumptech.glide",
+          "module": "glide",
+          "version": {
+            "requires": "4.12.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-common-2.7.0-beta.1.aar",
+          "url": "notificare-common-2.7.0-beta.1.aar",
+          "size": 690802,
+          "sha512": "6f935a9de7b0657cc9f64cfe0b443ecd1c97a9788b8239d733c7915319f0671bd7116ee1c3ef9029e9568af8cd02d28f562516526dead2531e5d58b32f5fc8ef",
+          "sha256": "d48810e905373c0338bc73ef4ba4af6bb81d8e9b03aa4b9668e6f9ba036a6abc",
+          "sha1": "c9c7f2b862cce3ddbbad0197cfb50b40532d4b8d",
+          "md5": "b7d5e8be22e390d9ec52a6f1c34904a3"
+        }
+      ]
+    }
+  ]
+}

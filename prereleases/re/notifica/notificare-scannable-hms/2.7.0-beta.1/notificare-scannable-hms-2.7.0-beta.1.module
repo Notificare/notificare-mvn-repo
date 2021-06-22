@@ -1,0 +1,166 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "re.notifica",
+    "module": "notificare-scannable-hms",
+    "version": "2.7.0-beta.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.7.0-beta.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.4.0-alpha02"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.huawei.hms",
+          "module": "scan",
+          "version": {
+            "requires": "1.3.2.300"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.3.0-alpha01"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-scannable-hms-2.7.0-beta.1.aar",
+          "url": "notificare-scannable-hms-2.7.0-beta.1.aar",
+          "size": 23037,
+          "sha512": "f4e00a5f2448ea3df170148e05a93e34d2ea13e6814eec096d647c99b6cce49eee92a894f3f5e7e45133d6287c6e8b89ba97d3dafe5d737b690318fe55a846e8",
+          "sha256": "58b1e6c65fc885264b308f35a6b451cc4c6c30d1a2aed7c9049b9b61c4e20cf3",
+          "sha1": "779c8127d9d9a779406dae17b114e922f38752ff",
+          "md5": "5729f233c6a5026211a2255ac055329f"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.7.0-beta.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.4.0-alpha02"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.huawei.hms",
+          "module": "scan",
+          "version": {
+            "requires": "1.3.2.300"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.3.0-alpha01"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-scannable-hms-2.7.0-beta.1.aar",
+          "url": "notificare-scannable-hms-2.7.0-beta.1.aar",
+          "size": 23037,
+          "sha512": "f4e00a5f2448ea3df170148e05a93e34d2ea13e6814eec096d647c99b6cce49eee92a894f3f5e7e45133d6287c6e8b89ba97d3dafe5d737b690318fe55a846e8",
+          "sha256": "58b1e6c65fc885264b308f35a6b451cc4c6c30d1a2aed7c9049b9b61c4e20cf3",
+          "sha1": "779c8127d9d9a779406dae17b114e922f38752ff",
+          "md5": "5729f233c6a5026211a2255ac055329f"
+        }
+      ]
+    }
+  ]
+}

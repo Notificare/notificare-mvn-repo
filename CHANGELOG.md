@@ -1,5 +1,12 @@
 Changelog
 =========
+# notificare-common 2.7.0-beta.1
+- Updated dependencies to Android S
+- Add precise location permission
+- Explicitly set mutability in pending intents for Android S
+- Explicitly set exported property to components in manifest
+- Force activities to handle trampoline intents
+
 # notificare-common 2.6.0
 - Updated dependencies
 - Add register test device

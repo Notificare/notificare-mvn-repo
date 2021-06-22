@@ -1,0 +1,166 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "re.notifica",
+    "module": "notificare-billing",
+    "version": "2.7.0-beta.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.7.0-beta.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.room",
+          "module": "room-runtime",
+          "version": {
+            "requires": "2.4.0-alpha03"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.android.billingclient",
+          "module": "billing",
+          "version": {
+            "requires": "4.0.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.3.0-alpha01"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-billing-2.7.0-beta.1.aar",
+          "url": "notificare-billing-2.7.0-beta.1.aar",
+          "size": 28559,
+          "sha512": "bf97ce733032a9265650129f9b632e4748dd2682f0967b2c0c1260539445dd677b6619cbb574706a8baa1081ba95b4f88e124841079a5956d6e54bcdebb5b768",
+          "sha256": "55393dd2589fc03bedc74286014fd09962362181c13f092873ffef0d49303518",
+          "sha1": "728fecfaec8903b70fb59fe859161455ecdd1cad",
+          "md5": "a28e043cbab09f45ad56e40500b82eff"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.7.0-beta.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.room",
+          "module": "room-runtime",
+          "version": {
+            "requires": "2.4.0-alpha03"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.android.billingclient",
+          "module": "billing",
+          "version": {
+            "requires": "4.0.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.3.0-alpha01"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-billing-2.7.0-beta.1.aar",
+          "url": "notificare-billing-2.7.0-beta.1.aar",
+          "size": 28559,
+          "sha512": "bf97ce733032a9265650129f9b632e4748dd2682f0967b2c0c1260539445dd677b6619cbb574706a8baa1081ba95b4f88e124841079a5956d6e54bcdebb5b768",
+          "sha256": "55393dd2589fc03bedc74286014fd09962362181c13f092873ffef0d49303518",
+          "sha1": "728fecfaec8903b70fb59fe859161455ecdd1cad",
+          "md5": "a28e043cbab09f45ad56e40500b82eff"
+        }
+      ]
+    }
+  ]
+}

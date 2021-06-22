@@ -1,0 +1,192 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "re.notifica",
+    "module": "notificare-core",
+    "version": "2.7.0-beta.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.7.0-beta.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-maps",
+          "version": {
+            "requires": "17.0.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-core",
+          "version": {
+            "requires": "19.0.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-messaging",
+          "version": {
+            "requires": "22.0.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.work",
+          "module": "work-gcm",
+          "version": {
+            "requires": "2.7.0-alpha04"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-core-2.7.0-beta.1.aar",
+          "url": "notificare-core-2.7.0-beta.1.aar",
+          "size": 33390,
+          "sha512": "86f5188aedf8bc78c63cd74e6305b1e76f4a74694ecdcf438f364f99e94227debc629279633c71eef3d37c2f8dca227af9b17f4c9fd7ffffd42b874948a0bca1",
+          "sha256": "c194d4c3418fe8c231c6d3da45b318b22d29ca4d0153520778a19568bf8cd1b0",
+          "sha1": "b65c65d8bfcffa3199dc17e1a5670456c13b6a08",
+          "md5": "325c4291a2299f434740363ae6434491"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.7.0-beta.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-maps",
+          "version": {
+            "requires": "17.0.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-core",
+          "version": {
+            "requires": "19.0.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-messaging",
+          "version": {
+            "requires": "22.0.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.work",
+          "module": "work-gcm",
+          "version": {
+            "requires": "2.7.0-alpha04"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-core-2.7.0-beta.1.aar",
+          "url": "notificare-core-2.7.0-beta.1.aar",
+          "size": 33390,
+          "sha512": "86f5188aedf8bc78c63cd74e6305b1e76f4a74694ecdcf438f364f99e94227debc629279633c71eef3d37c2f8dca227af9b17f4c9fd7ffffd42b874948a0bca1",
+          "sha256": "c194d4c3418fe8c231c6d3da45b318b22d29ca4d0153520778a19568bf8cd1b0",
+          "sha1": "b65c65d8bfcffa3199dc17e1a5670456c13b6a08",
+          "md5": "325c4291a2299f434740363ae6434491"
+        }
+      ]
+    }
+  ]
+}

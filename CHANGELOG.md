@@ -1,5 +1,11 @@
 Changelog
 =========
+# notificare-common 2.7.0-beta.2
+- Updated dependencies
+- Add pass version and template properties
+- Add pass v2 template fetch
+- Parse new passbook intent url format
+
 # notificare-common 2.7.0-beta.1
 - Updated dependencies to Android S
 - Add precise location permission

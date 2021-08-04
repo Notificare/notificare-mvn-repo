@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-common 2.7.0-beta.3
+- Updated dependencies
+- fix intent filters in foreground nfc scanning
+
 # notificare-common 2.7.0-beta.2
 - Updated dependencies
 - Add pass version and template properties

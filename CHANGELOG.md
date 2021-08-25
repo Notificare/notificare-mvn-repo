@@ -1,5 +1,10 @@
 Changelog
 =========
+# notificare-common 2.7.0-beta.4
+- Updated dependencies
+- Added GooglePay link handling for v2 loyalty passes
+- refactor fragment layouts
+
 # notificare-common 2.7.0-beta.3
 - Updated dependencies
 - fix intent filters in foreground nfc scanning

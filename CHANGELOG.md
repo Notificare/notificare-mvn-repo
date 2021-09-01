@@ -1,5 +1,8 @@
 Changelog
 =========
+# notificare-common 2.7.0-beta.5
+- Fix bluetooth permission check
+
 # notificare-common 2.7.0-beta.4
 - Updated dependencies
 - Added GooglePay link handling for v2 loyalty passes

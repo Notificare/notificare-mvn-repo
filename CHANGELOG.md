@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-common 2.7.0-beta.6
+- Added action icon from category
+- Updated dependencies
+
 # notificare-common 2.7.0-beta.5
 - Fix bluetooth permission check
 

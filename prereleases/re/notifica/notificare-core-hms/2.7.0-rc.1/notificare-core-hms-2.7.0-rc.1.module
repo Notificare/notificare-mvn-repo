@@ -1,0 +1,192 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "re.notifica",
+    "module": "notificare-core-hms",
+    "version": "2.7.0-rc.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.7.0-rc.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.2.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.huawei.hms",
+          "module": "push",
+          "version": {
+            "requires": "6.1.0.300"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.huawei.hms",
+          "module": "maps",
+          "version": {
+            "requires": "6.0.1.304"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.fragment",
+          "module": "fragment",
+          "version": {
+            "requires": "1.3.6"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-core-hms-2.7.0-rc.1.aar",
+          "url": "notificare-core-hms-2.7.0-rc.1.aar",
+          "size": 33611,
+          "sha512": "4fac0b5bda1828fb2d96a4e6ac78e3e591dc93516a19fda486e204dfa351f9a74b3c5ed17bf766e715daa1dfb5ac65eb3499736ab227f36be1180eb9bef141f5",
+          "sha256": "85c1ce24fdc11b7c7e41dae1a9766d45474fdce85d0666f36affdc3b0e24dac2",
+          "sha1": "25245d806aeac4dd3ab360a8b3ce4fe4e5ba71da",
+          "md5": "99215f85b383f87fc8d002431ea5544d"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.7.0-rc.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.2.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.huawei.hms",
+          "module": "push",
+          "version": {
+            "requires": "6.1.0.300"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.huawei.hms",
+          "module": "maps",
+          "version": {
+            "requires": "6.0.1.304"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.fragment",
+          "module": "fragment",
+          "version": {
+            "requires": "1.3.6"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-core-hms-2.7.0-rc.1.aar",
+          "url": "notificare-core-hms-2.7.0-rc.1.aar",
+          "size": 33611,
+          "sha512": "4fac0b5bda1828fb2d96a4e6ac78e3e591dc93516a19fda486e204dfa351f9a74b3c5ed17bf766e715daa1dfb5ac65eb3499736ab227f36be1180eb9bef141f5",
+          "sha256": "85c1ce24fdc11b7c7e41dae1a9766d45474fdce85d0666f36affdc3b0e24dac2",
+          "sha1": "25245d806aeac4dd3ab360a8b3ce4fe4e5ba71da",
+          "md5": "99215f85b383f87fc8d002431ea5544d"
+        }
+      ]
+    }
+  ]
+}

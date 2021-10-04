@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-common 2.7.0-rc.1
+- Removed temporary manifest replacements for HMS Push and AltBeacon
+- Updated dependencies for WorkManager and Lifecycle to their respective release candidates
+
 # notificare-common 2.7.0-beta.6
 - Added action icon from category
 - Updated dependencies

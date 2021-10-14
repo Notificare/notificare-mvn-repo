@@ -1,5 +1,10 @@
 Changelog
 =========
+
+# 2.7.0
+- Updated Altbeacon to 2.19.3
+- Updated to AndroidX WorkManager 2.7.0
+
 # notificare-common 2.7.0-rc.1
 - Removed temporary manifest replacements for HMS Push and AltBeacon
 - Updated dependencies for WorkManager and Lifecycle to their respective release candidates

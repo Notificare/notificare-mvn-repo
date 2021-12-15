@@ -1,7 +1,19 @@
 Changelog
 =========
 
-# 2.7.0
+# notificare-support-lib 2.2.0
+- update dependencies
+- bump Android SDK version
+- remove jCenter
+- refactor to maven-publish
+
+# notificare-common 2.7.1
+- Updated AndroidX dependencies
+- Updated HMS Core dependencies
+- Updated Play Services dependencies
+- Fixed cloud request double slashes (SDK-93)
+
+# notificare-common 2.7.0
 - Updated Altbeacon to 2.19.3
 - Updated to AndroidX WorkManager 2.7.0
 

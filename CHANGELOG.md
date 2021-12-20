@@ -1,5 +1,7 @@
 Changelog
 =========
+# notificare-common 2.7.2
+fixed inbox item expiration rescheduling (SDK-94)
 
 # notificare-support-lib 2.2.0
 - update dependencies

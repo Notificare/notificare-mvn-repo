@@ -1,5 +1,9 @@
 Changelog
 =========
+# notificare-common 2.7.3
+handle subdomain deeplinks for oauth
+updated dependencies
+
 # notificare-common 2.7.2
 fixed inbox item expiration rescheduling (SDK-94)
 

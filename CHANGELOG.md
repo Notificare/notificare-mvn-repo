@@ -1,5 +1,10 @@
 Changelog
 =========
+# notificare-common 2.7.4
+- fix fetching partial notification
+- update dependencies
+- update build tools and target sdk
+
 # notificare-common 2.7.3
 handle subdomain deeplinks for oauth
 updated dependencies

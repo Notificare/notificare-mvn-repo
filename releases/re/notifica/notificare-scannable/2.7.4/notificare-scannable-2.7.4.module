@@ -1,0 +1,140 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "re.notifica",
+    "module": "notificare-scannable",
+    "version": "2.7.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.7.4"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.4.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-vision",
+          "version": {
+            "requires": "20.1.3"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-scannable-2.7.4.aar",
+          "url": "notificare-scannable-2.7.4.aar",
+          "size": 24743,
+          "sha512": "ca5c8655ad2b20b2cd9dcf04cb618ce11764e035fe0d3caaf2f610e24e17330a36ab2bcbdb0b53952a9b637646228494ede6a6001425a2cde1fe300c0c304137",
+          "sha256": "4a18505db5aa5b0d6ad6b0bfacdc6c8bb74ef876046c2defc094788b6a43e97b",
+          "sha1": "661d0fc755547748dbb44d4caf4a85b9285d1355",
+          "md5": "6e44be7bddf91c198f39378ad183c1d0"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "re.notifica",
+          "module": "notificare-common",
+          "version": {
+            "requires": "2.7.4"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.4.1"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-vision",
+          "version": {
+            "requires": "20.1.3"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.httpcomponents",
+              "module": "httpclient"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "notificare-scannable-2.7.4.aar",
+          "url": "notificare-scannable-2.7.4.aar",
+          "size": 24743,
+          "sha512": "ca5c8655ad2b20b2cd9dcf04cb618ce11764e035fe0d3caaf2f610e24e17330a36ab2bcbdb0b53952a9b637646228494ede6a6001425a2cde1fe300c0c304137",
+          "sha256": "4a18505db5aa5b0d6ad6b0bfacdc6c8bb74ef876046c2defc094788b6a43e97b",
+          "sha1": "661d0fc755547748dbb44d4caf4a85b9285d1355",
+          "md5": "6e44be7bddf91c198f39378ad183c1d0"
+        }
+      ]
+    }
+  ]
+}
